@@ -9,6 +9,7 @@
 
 .container{
     width: 90%;
+    height: 100%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -23,13 +24,44 @@
 .bg-purple{
     background-color:rgb(151,146,228);
 }
+
+/* bottoni  */
+
+.button{
+    padding: 8px 10px;
+    border: none;
+    border-radius: 25px;
+}
+.button:hover{
+    cursor: pointer;
+}
 /* header  */
 
 header{
     background-color: rgb(0,132,253);
-    height: 150px;
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
+header .container{
+    align-items: center;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+header li{
+    padding-right: 10px;   
+}
+header i,header ul{
+    color: white;
+}
+header i {
+    font-size: 30px;
+}
 nav.mobile{
     display: none;
 }
@@ -54,7 +86,9 @@ nav.mobile{
 
 
 /* main */
-
+main{
+    padding-top: 100px;
+}
 section{
     padding: 40px 0;
 }
@@ -243,7 +277,6 @@ section{
 @media screen and (max-width: 480px){
     #container-get-started{
         height: 60vh;
-        
     }
 }
 
@@ -254,11 +287,13 @@ footer{
 }
 
 .container-footer{
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
 }
 
 .container-footer p{
-    padding-top: 20px;
+    padding: 30px 0;
 }
 
 /* debug 
