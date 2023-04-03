@@ -207,6 +207,22 @@ section{
     text-align:start ;
 }
 
+@media screen and (max-width: 780px){
+
+}
+@media screen and (max-width: 480px){
+    .container#about-us{
+        display: block;
+    }
+    .col-about-us{
+        width: 100%;
+        height: 40vh;
+    }
+    .col-about-us.big{
+        height: 100vh;
+    }
+}
+
 /* section get started  */
 
 .container-get-started{
