@@ -11,7 +11,7 @@
     width: 90%;
     margin: auto;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
 
@@ -37,6 +37,9 @@ nav.mobile{
 
 
 @media screen and (max-width: 480px){
+    
+    /* header mobile  */
+
     nav.mobile{
         display: block;
     }
@@ -44,36 +47,74 @@ nav.mobile{
     {
         display: none;
     }
+} 
+
+@media screen and (min-width 1140px) {
+
     
 }
 
 /* main */
 
-main{
-    
+section{
+    padding: 40px 0;
 }
-
 .row{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    
     gap: 5%;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    
+    
 }
 
 .col{
     width: 30%;
     background-color: rgb(181,221,255);
     margin-bottom: 15px;
-    
-    
+    border-radius: 10px;
 }
 .col.big{
     width: 65%;
 }
 
+    /* developer tablet  */
+
+@media screen and (max-width: 780px){
+
+    .container .col{
+        min-height: 100%;
+        height: 40vh;
+    }
+    .container .col.big {
+        height: 60vh;
+    }
+    .row{
+        margin-bottom: 25px;
+    }
+}
+
+    /* developer mobile  */
+
+@media screen and (max-width: 480px){
+    
+
+    .row {
+        display: block;
+        margin-bottom: 0;
+    }
+    .col.big , .col{
+        width: 100%;
+    }
+    .container .col.big{
+        height: 60vh;
+    }
+    .container .col{
+        height: 40vh;
+        min-height: 0;
+    }
+}
 /* footer  */
 
 footer{
