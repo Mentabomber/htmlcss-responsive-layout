@@ -59,14 +59,14 @@ nav.mobile{
 section{
     padding: 40px 0;
 }
+
+/* section developer  */
+
 .row{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
     gap: 5%;
-    
-    
 }
 
 .col{
@@ -115,6 +115,24 @@ section{
         min-height: 0;
     }
 }
+
+/* section planning  */
+
+
+
+#planning .container {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 5%;
+}
+#planning .container:last-child{
+    align-items: end;
+}
+/* section testimonials  */
+
+.card-container{
+    float: left;
+}
 /* footer  */
 
 footer{
@@ -145,6 +163,10 @@ section{
 .col{
     height: 50px;
     border: 1px solid black;
+}
+
+#planning .col{
+    height: 100%;
 }
 
 footer{
