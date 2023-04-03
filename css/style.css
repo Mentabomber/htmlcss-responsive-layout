@@ -164,15 +164,27 @@ section{
     width: 30%;
     text-align:start ;
 }
+
+/* section get started  */
+
+.container-get-started{
+    text-align: center;
+}
+
+
 /* footer  */
 
 footer{
     background-color: rgb(51,51,51);
 }
 
+.container-footer{
+    text-align: center;
+}
 
-
-
+.container-footer p{
+    padding-top: 20px;
+}
 
 /* debug */
 
