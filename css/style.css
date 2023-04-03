@@ -140,6 +140,17 @@ section{
     border-radius: 100%;
     height: 100%;
 }
+
+
+/* section benfits  */
+
+.scheda{ /*  potrei collegare parte con .col */
+    width: 30%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
 /* footer  */
 
 footer{
