@@ -75,7 +75,7 @@ section{
     border-radius: 10px;
     text-align: center;
 }
-.col.big{
+.col.big ,.col-about-us.big{
     width: 65%;
     text-align: start;
 }
@@ -151,6 +151,19 @@ section{
     text-align: left;
 }
 
+
+
+/* about us */
+
+#about-us.container{
+   justify-content: center;
+   gap: 5%
+}
+
+.col-about-us{
+    width: 30%;
+    text-align:start ;
+}
 /* footer  */
 
 footer{
@@ -188,6 +201,11 @@ section{
 }
 .card-container{
     height: 100px;
+}
+
+.col-about-us{
+    border: 1px solid black;
+    height: 400px;
 }
 
 footer{
