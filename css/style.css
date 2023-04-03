@@ -165,14 +165,33 @@ section{
     }
 }  
 
-/* section benfits  */
+/* section benefits  */
 
 .scheda{ /*  potrei collegare parte con .col */
-    width: 30%;
+    width: calc(100% / 3 - 5%);
     margin-bottom: 15px;
     border-radius: 10px;
     text-align: left;
 }
+#benefits .row{
+    justify-content: center;
+}
+@media screen and (max-width: 780px){
+   .scheda {
+    width: calc(100% / 2 - 3%);
+    height: 30vh;
+   }
+}
+@media screen and (max-width: 480px){
+    #benefits .row{
+        display: block;
+    }
+    .scheda {
+        width: 100%;
+        height: 40vh;
+       }
+
+}  
 
 
 
