@@ -208,7 +208,9 @@ section{
 }
 
 @media screen and (max-width: 780px){
-
+    .col-about-us{
+        height: 100vh;
+    }
 }
 @media screen and (max-width: 480px){
     .container#about-us{
@@ -225,10 +227,25 @@ section{
 
 /* section get started  */
 
-.container-get-started{
-    text-align: center;
+#container-get-started{
+    width: 90%;
+    margin: 0 auto;
 }
 
+
+@media screen and (max-width: 780px){
+#container-get-started{
+    height: 50vh;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 480px){
+    #container-get-started{
+        height: 60vh;
+        
+    }
+}
 
 /* footer  */
 
