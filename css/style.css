@@ -34,10 +34,9 @@ nav.mobile{
     display: none;
 }
 
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 780px){
     
-    /* header mobile  */
+    /* header tablet  */
 
     nav.mobile{
         display: block;
@@ -47,11 +46,12 @@ nav.mobile{
         display: none;
     }
 } 
-
-@media screen and (min-width 1140px) {
-
+@media screen and (max-width: 480px){
     
-}
+    /* header mobile  */
+
+} 
+
 
 /* main */
 
@@ -70,10 +70,12 @@ section{
 
 .col{
     width: 30%;
-    background-color: rgb(181,221,255);
     margin-bottom: 15px;
     border-radius: 10px;
     text-align: center;
+}
+.col.bg-lightblue{
+    background-color: rgb(181,221,255);
 }
 .col.big ,.col-about-us.big{
     width: 65%;
@@ -84,13 +86,11 @@ section{
 
 @media screen and (max-width: 780px){
 
-    .container .col{
-        min-height: 100%;
-        height: 40vh;
-    }
+    
     .container .col.big {
         height: 60vh;
     }
+    
     .row{
         margin-bottom: 25px;
     }
@@ -108,18 +108,31 @@ section{
     .col.big , .col{
         width: 100%;
     }
-    .container .col.big{
-        height: 60vh;
-    }
     .container .col{
         height: 40vh;
-        min-height: 0;
+        min-height: 0%;
     }
 }
 
 /* section planning  */
 
+@media screen and (max-width: 780px){
+    #planning .container{
+        display: block;
+    }
+    #planning .container .col{
+        width: 100%;
+    }
+    #planning .container img{
+        height: 80vh;
+    }
+}
 
+@media screen and (max-width: 480px){
+    #planning .container img{
+        height: 40vh;
+    } 
+}
 
 #planning .container {
     flex-wrap: nowrap;
@@ -141,6 +154,16 @@ section{
     height: 100%;
 }
 
+@media screen and (max-width: 780px){
+    .card-container{
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 480px){
+    .card-container{
+        height: 60vh;
+    }
+}  
 
 /* section benfits  */
 
@@ -186,7 +209,7 @@ footer{
     padding-top: 20px;
 }
 
-/* debug */
+/* debug 
 
 header .container div {
     width: 100px;
@@ -223,3 +246,4 @@ section{
 footer{
     height: 200px;
 }
+*/
