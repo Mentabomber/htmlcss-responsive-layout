@@ -127,14 +127,21 @@ section{
 div.col.big.col.bg-lightblue{
     display: flex;
 }
-div.col.big.col.bg-lightblue div h4{
+div.col.big.bg-lightblue div h4, div.col.col.bg-lightblue h4{
     color:rgb(0,132,253);
     font-size: 22px;
+    word-break: break-word;
 }
-div.col.big.col.bg-lightblue div p{
+div.col.small.bg-lightblue i{
+    font-size: 70px;
+    color:rgb(0,132,253);
+    padding: 25px 0;
+}
+div.col.big.bg-lightblue div p, div.col.small.bg-lightblue p{
     padding: 25px 0;
     font-size: 1.1rem;
     font-weight: bold;
+    word-break: break-word;
 }
 div.col.big.col.bg-lightblue div button{
     font-size: 15px;
@@ -142,7 +149,7 @@ div.col.big.col.bg-lightblue div button{
     font-weight: bold;
     padding: 10px 50px;
 }
-div.col.big.col.bg-lightblue div:first-child{
+div.col.big.col.bg-lightblue div:first-child , div.col.small.bg-lightblue{
     padding: 25px 20px;
 }
 div.col.big.col.bg-lightblue div:last-child{
