@@ -217,23 +217,7 @@ div.col.big img{
 }
 /* section planning  */
 
-@media screen and (max-width: 780px){
-    #planning .container{
-        display: block;
-    }
-    #planning .container .col{
-        width: 100%;
-    }
-    #planning .container img{
-        height: 80vh;
-    }
-}
 
-@media screen and (max-width: 480px){
-    #planning .container img{
-        height: 40vh;
-    } 
-}
 
 #planning .container {
     flex-wrap: nowrap;
@@ -249,7 +233,7 @@ div.col.big img{
 #planning .container div.col img {
     padding-bottom: 100px;
 }
-#planning .container div.col h3{
+#planning .container div.col h2{
     font-size: 22px;
     color: white;
     padding-bottom: 20px;
@@ -263,7 +247,8 @@ div.col.big img{
 }
 #planning .container div.col.bg-white h3{
     font-size: 22px;
-    color: rgb(151,146,228);
+    color: black;;
+    padding-bottom: 20px;
 }
 #planning .container div.col.bg-white p{
     color: black;
@@ -273,12 +258,41 @@ div.col.big img{
     padding-right: 20px;
 }
 #planning .container div.col.bg-white i{
-    padding: 10px 12px;
-    margin: 25px;
+    padding: 12px 14px;
+    margin-bottom: 15px;
     border-radius: 50%;
 }
 #planning .container:last-child{
     align-items: end;
+}
+
+@media screen and (max-width: 780px){
+    #planning .container{
+        display: block;
+    }
+    #planning .container .col{
+        width: 100%;
+    }
+    #planning .container img{
+        padding-top: 60px;
+        width: 100%;
+    }
+    #planning .container div.col h2{
+        font-size: 60px;
+    }
+    #planning .container div.col p{
+        margin-bottom: 25px;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    #planning .container img{
+        height: 100%
+    }
+    #planning .container div.col h2{
+        font-size: 30px;
+    }
 }
 
 /* section testimonials  */
