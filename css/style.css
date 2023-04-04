@@ -12,6 +12,7 @@
 .container{
     width: 90%;
     height: 100%;
+    max-width:1024px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +165,7 @@ div.col.big img{
 }
 div.col.big div{
     width: 50%;
+    
 }
 
     /* developer tablet  */
@@ -187,8 +189,9 @@ div.col.big div{
     div.col.big img{
         max-width: 60%;
         object-fit: contain;
-        display: block; 
+        display: block;
     }
+
     div.col.big.col.bg-lightblue div:last-child{
         display: block;
 }
@@ -210,9 +213,9 @@ div.col.big div{
     div.col.big.col.bg-lightblue div:last-child{
         text-align: center;
 }
-div.col.big img{
-    height: 100%; 
-    min-width: 100%;  
+    div.col.big img{
+        height: 100%; 
+        min-width: 100%;  
 }
 }
 /* section planning  */
@@ -296,25 +299,59 @@ div.col.big img{
 }
 
 /* section testimonials  */
+
+
+#testimonials h4{
+    padding: 30px 0;
+}
+#testimonials h2{
+    font-size: 40px;
+    color: rgb(151,146,228);
+    padding-bottom: 20px;
+}
+div.container#testimonials{
+    display: block;
+}
+.card-container div{
+    align-self: center;
+    padding: 0 15px;
+}
 .card-container{
-    border-radius: 15px;
-    margin-top: 15px;
+    border-radius: 30px;
+    margin-top: 10px;
     text-align: left;
+    display: flex;
+    color: white;
+    height: 30vh;
+}
+.card-container p {
+    padding-bottom: 10px;
 }
 .card-container img{
-    float: left;
-    border-radius: 100%;
-    height: 100%;
+    max-width: 25%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 20px; 
 }
 
 @media screen and (max-width: 780px){
     .card-container{
-        height: 30vh;
+        height: 40vh;
     }
 }
 @media screen and (max-width: 480px){
+
     .card-container{
-        height: 60vh;
+        height: 100%;
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .card-container img{
+        height: 100%;
+        max-width: 100%;
+        object-fit: none;
     }
 }  
 
